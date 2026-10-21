@@ -1,0 +1,8 @@
+timestamp,event,user,source,details
+2026-03-14T19:35:58+05:30,File copied,alice.menon,Filesystem,Q3_Payroll_Master.xlsx copied from C:\Finance\Confidential\ to E:\ 
+2026-03-14T14:02:11Z,USB device connected,alice.menon,USBSTOR,"Kingston DataTraveler 3.0, serial 60A44C413C2BE210, mounted as E:"
+2026-03-14T19:36:21+05:30,File copied,alice.menon,Filesystem,Acquisition_Targets_2026.docx copied from C:\Legal\Confidential\ to E:\ 
+2026-03-14T14:02:40Z,Confidential file accessed,alice.menon,Filesystem,C:\Finance\Confidential\Q3_Payroll_Master.xlsx opened
+2026-03-14T19:37:10+05:30,USB device removed,alice.menon,USBSTOR,"Kingston DataTraveler 3.0 safely removed, E: unmounted"
+2026-03-14T14:03:15Z,Confidential file accessed,alice.menon,Filesystem,C:\Legal\Confidential\Acquisition_Targets_2026.docx opened
+2026-03-14T13:58:20Z,Scheduled task run,SYSTEM,Task Scheduler,Antivirus quick scan started

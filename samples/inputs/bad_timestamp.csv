@@ -1,0 +1,3 @@
+timestamp,event,user,source,details
+2026-03-14T09:00:02Z,User login,alice.menon,Security Log,Interactive logon
+yesterday afternoon,File opened,alice.menon,Filesystem,report.docx

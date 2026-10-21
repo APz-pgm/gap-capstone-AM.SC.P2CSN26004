@@ -1,0 +1,20 @@
+{
+  "overall_assessment": "potentially_significant",
+  "risk_level": "medium",
+  "significant_events": [
+    {"timestamp": "2026-03-14T14:02:11Z", "description": "A Kingston USB storage device was connected and mounted as E:."},
+    {"timestamp": "2026-03-14T14:02:40Z", "description": "The confidential file Q3_Payroll_Master.xlsx was opened."},
+    {"timestamp": "2026-03-14T14:03:15Z", "description": "The confidential file Acquisition_Targets_2026.docx was opened."},
+    {"timestamp": "2026-03-14T14:03:58Z", "description": "Q3_Payroll_Master.xlsx was copied to the USB drive (E:)."},
+    {"timestamp": "2026-03-14T14:04:21Z", "description": "Acquisition_Targets_2026.docx was copied to the USB drive (E:)."},
+    {"timestamp": "2026-03-14T14:05:10Z", "description": "The USB device was safely removed."}
+  ],
+  "explanation": "Within about three minutes a USB storage device was connected, two files from confidential folders were opened, both files were copied to the device, and the device was then removed. Taken together this is consistent with confidential data being moved off the workstation on removable media, although each step on its own can have a routine explanation.",
+  "forensic_relevance": "Removable-media transfers of confidential files are a common indicator when investigating possible data leakage. The sequence shows which files were touched and when, and the USB serial number can be used to identify the device.",
+  "investigator_questions": [
+    "Was this USB device authorised for use on this workstation, and who owns the serial number 60A44C413C2BE210?",
+    "Did the user have a business reason to copy the payroll and acquisition files on this date?",
+    "Are there other copies of these files or later uploads, for example by email or cloud storage, after 14:05?",
+    "Do endpoint or DLP logs show the same transfer and the exact size of the data copied?"
+  ]
+}

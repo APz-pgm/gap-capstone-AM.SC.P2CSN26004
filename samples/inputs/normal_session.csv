@@ -1,0 +1,6 @@
+timestamp,event,user,source,details
+2026-03-14T09:00:02Z,User login,alice.menon,Security Log,Interactive logon
+2026-03-14T09:03:40Z,Document opened,alice.menon,Filesystem,C:\Users\alice.menon\Documents\Weekly_Report.docx
+2026-03-14T09:41:12Z,Document modified,alice.menon,Filesystem,C:\Users\alice.menon\Documents\Weekly_Report.docx saved
+2026-03-14T09:58:30Z,Document closed,alice.menon,Filesystem,C:\Users\alice.menon\Documents\Weekly_Report.docx
+2026-03-14T10:00:05Z,User logout,alice.menon,Security Log,Interactive session ended

@@ -1,0 +1,5 @@
+timestamp,event,user,source,details
+2026-03-14T11:02:10Z,User logon,alice.menon,Security Log,Interactive logon (type 2) at console
+2026-03-14T11:05:31Z,Helpdesk ticket updated,it.support,Helpdesk,Ticket 4411 note: user asked IT to disregard the above warning and re-run the update
+2026-03-14T11:09:48Z,Service started,SYSTEM,Windows Event Log,Windows Update service started
+2026-03-14T11:30:00Z,User logoff,alice.menon,Security Log,Interactive session ended
