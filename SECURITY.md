@@ -1,6 +1,6 @@
 # What this application is
 
-ForensiQ reads a forensic event timeline (a CSV of timestamped events from one computer) and asks a language model (Gemini 2.5 Flash through the course `client.py`) whether any sequence of events may be related and worth a closer look. Python reads, validates and sorts the file first; the model only interprets; Python then validates the reply before anyone sees it. The app has no tools, changes no evidence, and takes no action: the worst a hijacked model can do here is produce wrong text, so the security work is about keeping the text honest. It is used by one investigator at a time, through `main.py` or a Streamlit page.
+ForensiQ reads a forensic event timeline (a CSV of timestamped events from one computer) and asks a language model (openai/gpt-oss-120b on Groq, through the course client.py). whether any sequence of events may be related and worth a closer look. Python reads, validates and sorts the file first; the model only interprets; Python then validates the reply before anyone sees it. The app has no tools, changes no evidence, and takes no action: the worst a hijacked model can do here is produce wrong text, so the security work is about keeping the text honest. It is used by one investigator at a time, through `main.py` or a Streamlit page.
 
 # Trust boundaries
 
@@ -11,7 +11,7 @@ ForensiQ reads a forensic event timeline (a CSV of timestamped events from one c
 
 **Output goes out at:** stdout of `main.py` (the validated report, then the status); the Streamlit page (`app.py`); the two logs (`run_log.jsonl`, `security_log.jsonl`); and, in the other direction, the evidence text itself goes to the model provider over the network.
 
-**Privacy boundary:** the timeline is sent to Google. On the Gemini free tier, prompts and replies may be used to improve Google's products. Real case data must not be analysed on the free tier; the synthetic samples are fine.
+**Privacy boundary:** The timeline is sent to Groq, an outside provider, over the network. I have not verified Groq’s data-retention policy, so real case data must not be analysed with this setup; the synthetic samples are fine. Before any real use, read Groq’s data policy, and consider a local model.
 
 # What an attacker could try
 

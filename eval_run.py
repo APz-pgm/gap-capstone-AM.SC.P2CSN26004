@@ -4,7 +4,7 @@ eval_run.py - runs the EVAL.md rows and prints the Result column and the Metrics
     python eval_run.py                # uses whatever your .env points at
     python eval_run.py --rows 1 2 9   # only some rows
 
-Run it against your REAL model (gemini-2.5-flash). Against the stub it only
+Run it against your REAL model (openai/gpt-oss-120b).
 proves the code runs, and it says so. Output is also written to eval_results.md.
 
 Each row is a list of facts that must be true (never exact wording). The

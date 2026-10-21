@@ -23,8 +23,8 @@ from pathlib import Path
 OUTCOMES = ("ok", "invalid_output", "refused", "error")
 
 # USD per 1,000,000 tokens: (input, output).
-# Source: Google AI Studio pricing page for Gemini 2.5 Flash, as reported on
-# third-party price trackers in mid-2026. Verify at ai.google.dev/pricing.
+# Source: Groq's published price for openai/gpt-oss-120b, as listed on
+# third-party price trackers on 21 October 2026. Verify in your Groq console.
 # On the free tier you actually pay $0; cost_usd is the LIST-PRICE equivalent.
 PRICES = {
     "gpt-oss-120b": (0.15, 0.60),
